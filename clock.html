@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <meta charset="UTF=8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="clock.css" rel="stylesheet">
+  <title>JS Clock</title>
+</head>
+
+<body>
+  <div class="alarmContainer">
+    <div id="txt"></div>
+    <p>This alarm has sound</p>
+    <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+    <div class="controls">
+        <button onclick="setAlarm()" class="button setAlarm">Set alarm</button>
+        <button onclick="deleteAlarm()" class="button deleteAlarm">Delete alarm</button>
+    </div>
+  </div>
+  <footer>
+    <script src="clock.js"></script>
+  </footer>
+</body>
+
+</html>
